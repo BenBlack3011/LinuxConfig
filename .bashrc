@@ -118,31 +118,33 @@ fi
 
 
 alias ..="cd .."
+alias py="python3"
+alias ls="ls -a"
 
 
 # View Git status.
-alias gs='git status'
+# alias gs='git status'
 
 # Add a file to Git.
-alias ga='git add'
+#alias ga='git add'
 
 # Add all files to Git.
-alias gaa='git add --all'
+#alias gaa='git add --all'
 
 # Commit changes to the code.
-alias gc='git commit'
+#alias gc='git commit'
 
 # View the Git log.
-alias gl='git log --oneline'
+#alias gl='git log --oneline'
 
 # Create a new Git branch and move to the new branch at the same time. 
-alias gb='git checkout -b'
+#alias gb='git checkout -b'
 
 # View the difference.
-alias gd='git diff'
+#alias gd='git diff'
 
 # Display the directory structure better.
-alias t='tree --dirsfirst -F'
+#alias t='tree --dirsfirst -F'
 
 
 
