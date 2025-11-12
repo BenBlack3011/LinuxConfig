@@ -59,4 +59,9 @@ colo slate
 highlight LineNr ctermfg=grey
 
 
+" Bindings
+"vnoremap yy :w !xclip -selection clipboard<CR><CR>
+
+
+
 
