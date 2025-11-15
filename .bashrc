@@ -120,7 +120,7 @@ fi
 alias ..="cd .."
 alias py="python3"
 alias ls="ls -a"
-alias uni="cd ~/Documents/Uni/Semester3/"
+alias uni="cd ~/Documents/FH_Unterlagen/Semester3/"
 alias bas="vim ~/.bashrc"
 alias vir="vim ~/.vimrc"
 
@@ -154,12 +154,12 @@ alias vir="vim ~/.vimrc"
 
 clear
 printf "\n-----------------------------------------------------------------\n"
-printf "|   %s                                     |\n\n" "HOSTNAME: $(hostname -f)"
-printf "|   %s                                  |\n\n" "DATE: $(date '+%d/%m/%Y %H:%M Uhr')"
-printf "|   %s                               |\n\n" "UPTIME: $(uptime -p)"
-printf "|   %s             |\n\n" "$(acpi)"
-printf "|   %s                      |\n\n" "KERNEL: $(uname -rms)"
-printf "|   %s                                          |\n\n" "MEMORY: $(free -m -h | awk '/Mem/{print $3"/"$2}')"
+printf "|   %s                                     |\n" "HOSTNAME: $(hostname -f)"
+printf "|   %s                                  |\n" "DATE: $(date '+%d/%m/%Y %H:%M Uhr')"
+printf "|   %s                               |\n" "UPTIME: $(uptime -p)"
+printf "|   %s             |\n" "$(acpi)"
+printf "|   %s                      |\n" "KERNEL: $(uname -rms)"
+printf "|   %s                                          |\n" "MEMORY: $(free -m -h | awk '/Mem/{print $3"/"$2}')"
 printf "|   %s                                              |" "PACKAGES: $(dpkg --get-selections | wc -l)"
 printf "\n-----------------------------------------------------------------\n"
 
