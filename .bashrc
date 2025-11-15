@@ -154,16 +154,20 @@ alias vir="vim ~/.vimrc"
 
 clear
 printf "\n-----------------------------------------------------------------\n"
-printf "|   %s                                     |\n" "HOSTNAME: $(hostname -f)"
-printf "|   %s                                  |\n" "DATE: $(date '+%d/%m/%Y %H:%M Uhr')"
-printf "|   %s                               |\n" "UPTIME: $(uptime -p)"
-printf "|   %s             |\n" "$(acpi)"
-printf "|   %s                      |\n" "KERNEL: $(uname -rms)"
-printf "|   %s                                          |\n" "MEMORY: $(free -m -h | awk '/Mem/{print $3"/"$2}')"
-printf "|   %s                                              |" "PACKAGES: $(dpkg --get-selections | wc -l)"
+printf "|   %s                                  \t|\n" "HOSTNAME: $(hostname -f)"
+printf "|   %s                              \t|\n" "DATE: $(date '+%d/%m/%Y %H:%M Uhr')"
+printf "|   %s                          \t|\n" "UPTIME: $(uptime -p)"
+printf "|   %s         \t|\n" "$(acpi)"
+printf "|   %s                  \t|\n" "KERNEL: $(uname -rms)"
+printf "|   %s                                      \t|\n" "MEMORY: $(free -m -h | awk '/Mem/{print $3"/"$2}')"
+printf "|   %s                                          \t|" "PACKAGES: $(dpkg --get-selections | wc -l)"
 printf "\n-----------------------------------------------------------------\n"
 
 
 
 
 
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
