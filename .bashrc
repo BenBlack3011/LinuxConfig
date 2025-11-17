@@ -88,6 +88,7 @@ fi
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
+alias ls="ls --color=auto"
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
@@ -119,7 +120,6 @@ fi
 
 alias ..="cd .."
 alias py="python3"
-alias ls="ls -a"
 alias uni="cd ~/Documents/FH_Unterlagen/Semester3/"
 alias bas="vim ~/.bashrc"
 alias vir="vim ~/.vimrc"
@@ -153,15 +153,13 @@ alias vir="vim ~/.vimrc"
 
 
 clear
-printf "\n-----------------------------------------------------------------\n"
-printf "|   %s                                  \t|\n" "HOSTNAME: $(hostname -f)"
-printf "|   %s                              \t|\n" "DATE: $(date '+%d/%m/%Y %H:%M Uhr')"
-printf "|   %s                          \t|\n" "UPTIME: $(uptime -p)"
-printf "|   %s         \t|\n" "$(acpi)"
-printf "|   %s                  \t|\n" "KERNEL: $(uname -rms)"
-printf "|   %s                                      \t|\n" "MEMORY: $(free -m -h | awk '/Mem/{print $3"/"$2}')"
-printf "|   %s                                          \t|" "PACKAGES: $(dpkg --get-selections | wc -l)"
-printf "\n-----------------------------------------------------------------\n"
+printf "HOSTNAME: $(hostname -f)\n"
+printf "DATE: $(date '+%d/%m/%Y %H:%M Uhr')\n"
+printf "UPTIME: ""$(uptime -p)""\n"
+printf "$(acpi)\n"
+printf "KERNEL: $(uname -rms)\n"
+printf "MEMORY: $(free -m -h | awk '/Mem/{print $3"/"$2}')\n"
+printf "PACKAGES: $(dpkg --get-selections | wc -l)\n"
 
 
 
