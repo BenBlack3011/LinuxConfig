@@ -82,7 +82,6 @@ au BufReadPost *
    \      exe "normal g'\"" |
    \  endif |
 
-
 let g:ft_man_open_mode = 'tab'
 
 let mapleader = " "

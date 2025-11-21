@@ -125,8 +125,11 @@ alias bas="vim ~/.bashrc"
 alias vir="vim ~/.vimrc"
 
 
+# change cursor to vertical line (2 for block)
+echo -e "\e[5 q"
+
 # View Git status.
-# alias gs='git status'
+#alias gs='git status'
 
 # Add a file to Git.
 #alias ga='git add'
@@ -153,15 +156,15 @@ alias vir="vim ~/.vimrc"
 
 
 clear
-printf "HOSTNAME: $(hostname -f)\n"
-printf "DATE: $(date '+%d/%m/%Y %H:%M Uhr')\n"
-printf "UPTIME: ""$(uptime -p)""\n"
-printf "$(acpi)\n"
-printf "KERNEL: $(uname -rms)\n"
-printf "MEMORY: $(free -m -h | awk '/Mem/{print $3"/"$2}')\n"
-printf "PACKAGES: $(dpkg --get-selections | wc -l)\n"
-
-
+printf "\n"
+printf "  HOSTNAME: $(hostname -f)\n"
+printf "  DATE: $(date '+%d/%m/%Y %H:%M Uhr')\n"
+printf "  UPTIME: %s\n" "$(uptime -p)"
+printf "  %s\n" "$(acpi)"
+printf "  KERNEL: $(uname -rms)\n"
+printf "  MEMORY: $(free -m -h | awk '/Mem/{print $3"/"$2}')\n"
+printf "  PACKAGES: $(dpkg --get-selections | wc -l)\n"
+printf "\n"
 
 
 

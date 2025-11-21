@@ -3,6 +3,8 @@
 !.gitignore
 !.vimrc
 !.bashrc
+!.ssh/
+!.config/alacritty/
 
 
 
