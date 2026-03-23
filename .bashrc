@@ -120,7 +120,7 @@ fi
 
 alias ..="cd .."
 alias py="python3"
-alias uni="cd ~/Documents/FH_Unterlagen/Semester3/"
+alias uni="cd ~/Documents/FH_Unterlagen/Semester4/"
 alias bas="vim ~/.bashrc"
 alias vir="vim ~/.vimrc"
 
