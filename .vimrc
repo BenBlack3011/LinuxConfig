@@ -130,3 +130,10 @@ inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 nnoremap <silent> <leader>gl :Git log --oneline --graph<CR>
 nnoremap <silent> <leader>gs :Git status<CR>
 nnoremap <silent> <leader>gb :Git branch<CR>
+
+au BufWritePost *.typ silent execute "!typst compile %"
+
+
+
+
+

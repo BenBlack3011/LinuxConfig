@@ -128,6 +128,11 @@ alias ad="cd ~/Documents/FH_Unterlagen/Semester3/Algorithmen_und_Datenstrukturen
 alias rn="cd ~/Documents/FH_Unterlagen/Semester3/Rechnernetze/Vorlesung/"
 alias batteryhealth="upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep \"capacity:\""
 
+sha256() {
+    printf '%s %s\n' "$1" "$2" | sha256sum --check
+}
+
+
 # change cursor to vertical line (2 for block)
 echo -e "\e[5 q"
 
