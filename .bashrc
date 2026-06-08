@@ -173,7 +173,7 @@ printf "  MEMORY: $(free -m -h | awk '/Mem/{print $3"/"$2}')\n"
 printf "\n"
 
 
-
+export PATH=$PATH:~/bin
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
