@@ -124,9 +124,12 @@ alias uni="cd ~/Documents/FH_Unterlagen/Semester4/"
 alias bas="vim ~/.bashrc"
 alias vir="vim ~/.vimrc"
 
-alias ad="cd ~/Documents/FH_Unterlagen/Semester3/Algorithmen_und_Datenstrukturen/Vorlesung/"
-alias rn="cd ~/Documents/FH_Unterlagen/Semester3/Rechnernetze/Vorlesung/"
 alias batteryhealth="upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep \"capacity:\""
+
+# Temporary Aliases
+alias BS="cd ~/Documents/FH_Unterlagen/Semester4/Betriebssysteme/"
+alias PSE="cd ~/Documents/FH_Unterlagen/Semester4/PSE_Tutor/"
+alias SWA="cd ~/Documents/FH_Unterlagen/Semester4/Softwarearchitektur/"
 
 sha256() {
     printf '%s %s\n' "$1" "$2" | sha256sum --check
@@ -137,16 +140,19 @@ sha256() {
 echo -e "\e[5 q"
 
 # View Git status.
-#alias gs='git status'
+alias gs='git status'
 
 # Add a file to Git.
-#alias ga='git add'
+alias ga='git add'
 
 # Add all files to Git.
-#alias gaa='git add --all'
+alias gaa='git add .'
 
 # Commit changes to the code.
-#alias gc='git commit'
+alias gc='git commit'
+
+# Push changes to default upstream.
+alias gp='git push'
 
 # View the Git log.
 #alias gl='git log --oneline'
