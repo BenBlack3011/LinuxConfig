@@ -120,8 +120,8 @@ fi
 
 alias ..="cd .."
 alias py="python3"
-alias uni="cd ~/Documents/FH_Unterlagen/Semester4/"
-alias bas="vim ~/.bashrc"
+alias uni="cd ~/Documents/FH_Unterlagen/Semester5/"
+alias bar="vim ~/.bashrc"
 alias vir="vim ~/.vimrc"
 
 alias batteryhealth="upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep \"capacity:\""
@@ -129,7 +129,6 @@ alias batteryhealth="upower -i /org/freedesktop/UPower/devices/battery_BAT0 | gr
 # Temporary Aliases
 alias BS="cd ~/Documents/FH_Unterlagen/Semester4/Betriebssysteme/"
 alias PSE="cd ~/Documents/FH_Unterlagen/Semester4/PSE_Tutor/"
-alias SWA="cd ~/Documents/FH_Unterlagen/Semester4/Softwarearchitektur/"
 
 sha256() {
     printf '%s %s\n' "$1" "$2" | sha256sum --check
